@@ -1,0 +1,207 @@
+ .rectangleHeader{
+    height: 20vh;
+    width: 100vw;
+    background-color: #0D1A25;
+    display:flex ;
+    justify-content: right ;
+    flex-wrap: wrap ;
+    align-content: space-around ;
+
+}
+ .logoImg {
+    height:20vh ;
+    z-index:  1000 ;
+    position: absolute ;
+    padding-left: 5vw ;
+    top: 10vh;
+}
+
+ .screensImg {
+    height:90vh ;
+    padding-right: 20vw ;
+    
+    
+}
+ .font {
+    
+        font-family: Joan ;
+ 
+    }
+
+ .userFLowDiagram {
+    width: 100vw ;
+    
+}
+
+ .wireframeDiagram{
+    width: 80vw ;
+    display: block ;
+margin-left: auto ;
+margin-right: auto ;
+width: 50% ;
+}
+
+ .swatch{
+    height: 40vh;
+    width:40vh;
+    border-radius: 0px 30px 0px 30px;
+    
+
+}
+
+ .flexCont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ .flexContStyle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    row-gap: 20px;
+}
+
+ .overDesc{
+    flex-grow: 2;
+    margin: 25px;
+}
+
+ .links{
+    background-color: #0D1A25;
+    color: white;
+    margin: 25px;
+    padding: 20px;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 0px 30px 0px 30px;
+    padding-bottom: 50px;
+    
+}
+
+ .linkOut{
+    text-decoration: none;
+    color: white;
+
+}
+
+ .bgColor {
+    background-color: #0D1A25;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 0px 30px 0px 30px;
+    
+}
+ .linkColor {
+    background-color: #F90606;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 0px 30px 0px 30px;
+    
+}
+
+ .compColor {
+    background-color: #122535;
+    height: 30vh;
+    width:30vh;
+    border-radius: 0px 30px 0px 30px;
+    
+}
+
+ .btnColor {
+    background-color: #59A9F0;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 0px 30px 0px 30px;
+    
+}
+
+ .swatchDesc{
+    width: 20vw;
+    margin-left: 20px;
+}
+
+ .googleFont{
+    
+    height: 30vh;
+    width: 30vh;
+    border-radius: 0px 30px 0px 30px;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+ .imageBox{
+    
+    height: 30vh;
+    width: 30vh;
+    border-radius: 0px 30px 0px 30px;
+    
+}
+
+
+
+ .imageMovie{
+    height: 30vh;
+    width: 30vh;
+    border-radius: 0px 30px 0px 30px;
+}
+
+ .faIcon {
+    height: 10vh;
+}
+ .line {
+    float: left;
+    width: 160px;
+    margin-left: 60px;
+    
+
+}
+
+ .lineTwo {
+    float: left;
+    width: 160px;
+    margin-left:  160px;
+
+}
+
+.marg{
+    margin: 5px;
+    margin-left: 100px;
+    
+}
+
+.navMenu {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    
+    flex-wrap: wrap;
+    align-content: space-around;
+    color: white;
+    
+
+    
+}
+
+.navItem{
+    padding-left: 1em;
+    text-decoration: none;
+    color: white;
+    
+}
+.navItemLast{
+    padding-left: 1em;
+    padding-right: 3em;
+    text-decoration: none;
+    color:white;
+}
+.underline{
+    text-decoration: none;
+}
