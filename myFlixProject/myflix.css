@@ -1,4 +1,19 @@
+@font-face {
+    font-family: Joan;
+    src: url('/src/assets/font/Joan-Regular.ttf') format('truetype');
+}
+
+
+body{
+    font-family: Joan;
+    font-size:1.5em;
+
+}
+
+
+ 
  .rectangleHeader{
+    padding-right:0;
     height: 20vh;
     width: 100vw;
     background-color: #0D1A25;
