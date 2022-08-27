@@ -1,286 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="myflix.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="myflix.css">
+  <title>myFlix Project Documentation</title>
 </head>
+
 <body>
-    
-        <div class="projHeader">
-          <div class="rectangleHeader">
-              <div class="menu" class="navMenu">
-              <a class="underline" href='#overview'>
-                  <p class="navItem">Overview</p>
-                  </a>
-                  <a class="underline" href='#planning'>
-                  <p class="navItem">Planning</p>
-                  
-                  </a>
-                  <a class="underline" href='#style'>
-                  <p class="navItem">Styling Guide</p>
-                  </a>
-                  <a class="underline" href='#development'>
-                  <p class="navItem">Development</p>
-                  </a>
-                  <a class="underline" href='#decisions'>
-                  <p class="navItemLast">Decisions</p>
-                  </a>
-              </div>
-          </div>
-          
-          <img class="logoImg" src="assets/logo-white-small.svg"   alt="" />
-          
-        </div>
-        <div class="projScreen">
-          <img class="screensImg" src="assets/screens.jpg" alt="" />
-        </div>
-        <div class="projOverview" id="overview" >
-          
-              <hr class="line" />
-              <br />
-          <h2  class="marg">Project Overview</h2>
-          
-          <hr class="lineTwo" />
-          <br />
-          <div class="projOverViewDetail flexCont" ></div>
-              <h3 >Objective</h3>
-              <p >Using React, build the client-side for an application called myFlix based on its existing server-side code (REST API and database). 
-  </p>
-          </div>
-          <div class="links">
-              <h3 >Github:</h3>
-              <a href="https://github.com/sms165/movie-client" target="_blank"   class="linkOut" > https://github.com/sms165/movie-client</a>
-              <br/>
-              <br/>
-              <h3 >Netlify (live version):</h3>
-              
-              <a href="https://myflix-moviedb.netlify.app/" target="_blank" class="linkOut" >https://myflix-moviedb.netlify.app/</a>
-          </div>
-          </div>
-        </div>
-        <div class="projPlanning" id="planning">
-          
-        <hr class="line "/>
-              <br />
-          <h2  class="marg">Planning</h2>
-          <hr class="lineTwo" />
-          
-          <br/>
-          <div class="userStories overDesc" >
-              <h3 >User Stories</h3>
-              <ul>
-                  <li>As a user, I want to be able to access information on movies, actors, directors and genres so that I am able to learn more.</li>
-                  <li>As a user, I want to be able to create a profile, make a favorites list to save favorite movies, and be able to update my profile data.</li>
-              </ul>
-          </div>
-          <div class="userFlow overDesc" >
-              <h3 >User Flow</h3>
-              <img class="userFLowDiagram" src="assets/userFlow.jpg" alt="" />
-          </div>
-          <div class="wireframes overDesc"  >
-              <h3 >Wireframes</h3>
-              <img class="wireframeDiagram" src="assets/wireframeMyFlix.svg" alt="" />
-          </div>
-  
-        </div>
-        <br/>
-        <br/>
-        <div class="projStyle" id="style">
-        <hr class="line" />
-              <br />
-          <h2  class="marg">Style Guide</h2>
-          <hr class="lineTwo" />
-          <br />
-          <div class="color overDesc" >
-            <h3 >Color Palette</h3>
-            <p >
-              I oriented the style of the website on the classical simple style in
-              a dark theme.
+
+  <header>
+    <div class="header">
+      <div class="menu">
+        <p class="navItem">
+          <a  class="linkSize" href="#overview">
+          Overview
+        </a></p>
+        <p class="navItem">
+        <a  class="linkSize" href="#planning">
+          Planning
+
+        </a></p>
+        <p class="navItem">
+        <a class="linkSize" href="#style">
+          Styling Guide
+        </a></p>
+        <p class="navItem">
+        <a class="linkSize" href="#development">
+          Development
+        </a></p>
+        <p class="navItemLast">
+        <a class="linkSize" href="#decisions">
+          Challenges
+        </a></p>
+      </div>
+    </div>
+  </header>
+
+  <img class="logoImg" src="assets/logo-white-small.svg" alt="logo" />
+
+  <main>
+
+    <img class="screensImg" src="assets/screens.jpg" alt="project screenshots" />
+
+    <div class="projOverview" id="overview">
+
+      <hr class="line" />
+      <h2>Project Overview</h2>
+      <hr class="lineTwo" />
+      <br />
+
+      <div class="objectiveFlex">
+
+        <div class="objContainer">
+          <div class="objectiveDetail">
+            <h3>Objective</h3>
+            <p>Using React, build the client-side for an application called myFlix based on its existing server-side
+              code
+              (REST API and database).
             </p>
-            <div class="swatches flexContStyle" >
-              <div class="bgCol flexCont" >
-              <div class="backgroundColor bgColor" ></div>
+          </div>
+        </div>
+
+        <div class="objContainer">
+          <div class="links">
+            <h4>Github:</h4>
+            <a class="projLink" href="https://github.com/sms165/movie-client" target="_blank">
+              https://github.com/sms165/movie-client</a>
+            <br />
+            <br />
+            <h4>Netlify (live version):</h4>
+            <a class="projLink" href="https://myflix-moviedb.netlify.app/"
+              target="_blank">https://myflix-moviedb.netlify.app/</a>
+              <h6>Username: tester</h6>
+              <h6>Password: password</h6>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="projPlanning" id="planning">
+
+        <hr class="line " />
+        <h2>Planning</h2>
+        <hr class="lineTwo" />
+        <br />
+
+
+        <div class="userStories">
+          <h3>User Stories</h3>
+          <ul>
+            <li>As a user, I want to be able to access information on movies, actors, directors and genres so that I am
+              able to learn more.</li>
+            <li>As a user, I want to be able to create a profile, make a favorites list to save favorite movies, and be
+              able to update my profile data.</li>
+          </ul>
+        </div>
+
+        <div class="userFlow overDesc">
+          <h3>User Flow</h3>
+          <img class="userFLowDiagram" src="assets/userFlow.jpg" alt="" />
+        </div>
+
+        <div class="wireframes overDesc">
+          <h3>Wireframes</h3>
+          <img class="wireframeDiagram" src="assets/wireframeMyFlix.svg" alt="" />
+        </div>
+
+      </div>
+
+      <br />
+      <br />
+
+      <div class="projStyle" id="style">
+
+        <hr class="line" />
+        <h2>Style Guide</h2>
+        <hr class="lineTwo" />
+        <br />
+
+        <div class="color overDesc">
+          <h3>Color Palette</h3>
+          <p>
+            I oriented the style of the website on the classical simple style in
+            a dark theme.
+          </p>
+          <br />
+          <br />
+
+          <div class="styleContainerFlex">
+
+            <div class="flexChild">
+              <div class="swatchBox bgColor"></div>
               <div class="swatchDesc">
-                <h4 >Background Color:</h4>
-                <p >#0D1A25</p>
+                <br />
+                <h4>Background Color:</h4>
+                <p>#0D1A25</p>
               </div>
-              </div>
-              <div class="compCol flexCont" >
-              <div class="componentColor compColor" ></div>
+            </div>
+
+            <div class="flexChild">
+              <div class="swatchBox compColor"></div>
               <div class="swatchDesc">
+                <br />
                 <h4>Component Color:</h4>
                 <p>#122535</p>
               </div>
-              </div>
-              <div class="linkCol flexCont" >
-              <div class="linkColor"></div>
+            </div>
+
+            <div class="flexChild">
+              <div class="swatchBox linkColor"></div>
               <div class="swatchDesc">
+                <br />
                 <h4>Link Hover Color:</h4>
                 <p>#F90606</p>
               </div>
-              </div>
-              <div class="btnCol flexCont" >
-              <div class="buttonColor btnColor" ></div>
+            </div>
+
+            <div class="flexChild">
+              <div class="swatchBox btnColor"></div>
               <div class="swatchDesc">
+                <br />
                 <h4>Button Color:</h4>
                 <p>#59A9F0</p>
               </div>
-              </div>
-              </div>
             </div>
-  
-  <div class="typography overDesc" >
-            <h3>Typography</h3>
-            
-            <div class="font flexContStyle">
-              <div class="flexCont">
-              <div class="fontName googleFont" ><div class="fontName"><h2 >Joan</h2></div></div>
-              <div class="fontDesc swatchDesc" >
+
+          </div>
+
+        </div>
+
+        <div class="typography overDesc">
+          <br />
+          <h3>Typography</h3>
+          <br />
+
+          <div class="styleContainerFlex">
+
+            <div class="flexChild">
+              <div class="swatchBox borderBox centerBox">
+                <div class="fontName">
+                  <h1>Joan</h1>
+                </div>
+              </div>
+              <div class="swatchDesc">
+                <br />
                 <h4>Google Font:</h4>
                 <p>Designed by Paolo Biagini</p>
-                <img href="assets/trash-can-solid.svg"  />
-                
-              </div></div>
+              </div>
+            </div>
           </div>
-          
-  
-          <div c="icongraphy" >
-            <h3>Icongraphy</h3>
-            <div class="flexContStyle">
-            <div class="flexCont">
-           
-              <div  class="iconImage googleFont"> <img href="myFlixProject/assets/trash-can-solid.svg"  />
 
+        </div>
+
+          <div class="icongraphy">
+            <br />
+            <h3>Icongraphy</h3>
+            <br />
+
+            <div class="styleContainerFlex">
+
+              <div class="flexChild">
+                <div class="swatchBox borderBox centerBox">
+                  <div class="iconImage">
+                    <img src="assets/trashCan.svg" />
+                  </div>
+                </div>
+                <div class="swatchDesc">
+                  <br />
+                  <h4>FontAwesome:</h4>
+                  <p>TrashCan</p>
+                </div>
               </div>
-              <div class="iconDesc swatchDesc" >
-                <h4>FontAwesome:</h4>
-                <p>TrashCan</p>
+
+
+              <div class="flexChild">
+                <div class="swatchBox borderBox centerBox">
+                  <div class="iconImage">
+                    <img src="assets/pen-to-square-solid.svg" class="fa-icon">
+                  </div>
+                </div>
+                <div class="swatchDesc">
+                  <br />
+                  <h4>FontAwesome:</h4>
+                  <p>Pen-to-Square</p>
+                </div>
               </div>
+
+            </div>
           </div>
-          <div class="flexCont">
-          
-              <div class="iconImage googleFont" ><img href="assets/pen-to-square-solid.svg" class="fa-icon"></i></div>
-              <div class="iconDesc swatchDesc"  >
-                <h4>FontAwesome:</h4>
-                <p>Pen-to-Square</p>
+
+        
+
+        <div class="images">
+          <br/>
+          <h3>Images</h3>
+          <br/>
+
+          <div class="styleContainerFlex">
+
+
+            <div class="flexChild">
+                <div class="swatchBox ">
+              <div class="movieImage">
+                <img class="imageMovie" src="assets/movie-theater.jpg" alt="" />
               </div>
-          </div>
-          
-          </div>
-          </div>
-          
-  
-  
-          <div class="images" >
-            <h3>Images</h3>
-            
-            <div class="flexContStyle">
-            <div class="flexCont">
-  
-            
-              <div class="imgImage imageBox" ><img class="imageMovie" src="assets/movie-theater.jpg" alt="" /></div>
-              <div class="imgDesc imageBox">
+                </div>
+              <div class="swatchDesc">
+                <br/>
                 <h4>Pixabay:</h4>
                 <p>Free Image</p>
               </div>
-          </div>
-  
-          <div class="flexCont">
-              <div className="imgImage imageBox"><img class="imageMovie" src="assets/dorisday.jpg" /> </div>
-              <div className="imageDesc swatchDesc" >
+            </div>
+
+            <div class="flexChild">
+              <div class="swatchBox ">
+              <div class="movieImage">
+                <img class="imageMovie" src="assets/dorisday.jpg" /> 
+              </div>
+              </div>
+              <div class="swatchDesc">
+                <br/>
                 <h4>TheMovieDB:</h4>
                 <p>Images for movies, actors, and directors.</p>
               </div>
-          </div>
-          </div>
-          </div>
-  
+            </div>
+
           </div>
         </div>
-        <br/>
-        <br/>
-        <div class="projDevel" id="development">
+
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="projDevel" id="development">
+      <hr class="line" />
+
+      <h2>Development</h2>
+      <hr class="lineTwo" />
+      <br />
+
+      <div class="techUsed overDesc">
+        <h3>Technologies Used</h3>
+        <ul>
+          <li>Programmed using the MERN tech stack which stands for:</li>
+          <ul>
+            <li>MongoDB: Database used to store movie data</li>
+            <li>Express: Node.js web framework</li>
+            <li>React: JavaScript framework</li>
+            <li>
+              Node.js: runtime environment , allows JavaScript to be used on
+              the server side
+            </li>
+          </ul>
+          <li>HTML</li>
+          <li>CSS / React Bootstrap</li>
+        </ul>
+      </div>
+      <br />
+      <br />
+      <div class="decisions" >
+
         <hr class="line" />
-              <br />
-          <h2  class="marg">Development</h2>
-          <hr class="lineTwo" />
-          <br />
-      
-          <div class="techUsed overDesc" >
-            <h3>Technologies Used</h3>
-            <ul>
-              <li>Programmed using the MERN tech stack which stands for:</li>
-              <ul>
-                <li>MongoDB: Database used to store movie data</li>
-                <li>Express: Node.js web framework</li>
-                <li>React: JavaScript framework</li>
-                <li>
-                  Node.js: runtime environment , allows JavaScript to be used on
-                  the server side
-                </li>
-              </ul>
-              <li>HTML</li>
-              <li>CSS / React Bootstrap</li>
-            </ul>
-          </div>
-          <br/>
-        <br/>
-          <div class="decisions" id="decisions" >
-            
-            <hr class="line" />
-              <br />
-          <h2  class="marg">Decisions made and consequences:</h2>
-          <hr class="lineTwo" />
-          <br />
+        <h2 id="decisions">Challenges:</h2>
+        <hr class="lineTwo" />
+        <br />
+        <ul>
+          <li>
+            As the lessons on CareerFoundry were not up to date with the new
+            versions for example of React and React Router, I had to rely on
+            other sources to program this site. As a web developer it is
+            important to stay up to date and continue learning, which is why I
+            choose to program with the current versions.<br />
+
+          </li>
+          <ul>
+            <li>
+              I studied the official documentation to help me complete the
+              tasks, which was difficult at times but it gave me the
+              opportunity to gain more experience with reading documentations.<br />
+
+            </li>
+          </ul>
+          <li>
+            I decided to include more views, and functions than the lesson
+            stated to have a chance to learn more.<br />
+          </li>
+          <ul>
+            <li>
+              I wanted to make the password change function on the user update
+              view more secure. The user needs to type in their old password
+              and their new password, then in the backend the program checks
+              if the old password is the same as that which is saved in the
+              database and only if it returns true the password will be
+              changed.<br />
+            </li>
             <ul>
               <li>
-                As the lessons on CareerFoundry were not up to date with the new
-                versions for example of React and React Router, I had to rely on
-                other sources to program this site. As a web developer it is
-                important to stay up to date and continue learning, which is why I
-                choose to program with the current versions.<br/>
-        
+                A consequence of this was that I had to go back to the API to
+                make a new endpoint which has the logic behind it to handle
+                the password comparison and change.<br /><br />
               </li>
-              <ul>
-                <li>
-                  I studied the official documentation to help me complete the
-                  tasks, which was difficult at times but it gave me the
-                  opportunity to gain more experience with reading documentations.<br/>
-  
-                </li>
-              </ul>
-              <li>
-                I decided to include more views, and functions than the lesson
-                stated to have a chance to learn more.<br/>
-              </li>
-              <ul>
-                <li>
-                  I wanted to make the password change function on the user update
-                  view more secure. The user needs to type in their old password
-                  and their new password, then in the backend the program checks
-                  if the old password is the same as that which is saved in the
-                  database and only if it returns true the password will be
-                  changed.<br/>
-                </li>
-                <ul>
-                  <li>
-                    A consequence of this was that I had to go back to the API to
-                    make a new endpoint which has the logic behind it to handle
-                    the password comparison and change.<br/><br/>
-                  </li>
-                </ul>
-              </ul>
             </ul>
-          </div>
-        </div>
-     
-      
-      
-    );
-  }
-  
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </main>
+
 </body>
+
 </html>

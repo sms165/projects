@@ -1,77 +1,147 @@
 @font-face {
     font-family: Joan;
-    src: url('/src/assets/font/Joan-Regular.ttf') format('truetype');
+    src: url('assets/font/Joan-Regular.ttf') format('truetype');
+
 }
 
+* {
+    padding: 0;
+    margin: 0;
+}
 
-body{
+body {
     font-family: Joan;
-    font-size:1.5em;
+    font-size: 1.5em;
 
 }
 
+.logoImg {
+    height: 30vh;
+    z-index: 1000;
+    position: absolute;
+    padding-left: 5vw;
+    top: 5vh;
+}
 
- 
- .rectangleHeader{
-    padding-right:0;
-    height: 20vh;
+
+.header {
+    /* padding-right:0; */
+    height: 25vh;
     width: 100vw;
     background-color: #0D1A25;
-    display:flex ;
-    justify-content: right ;
-    flex-wrap: wrap ;
-    align-content: space-around ;
-
-}
- .logoImg {
-    height:20vh ;
-    z-index:  1000 ;
-    position: absolute ;
-    padding-left: 5vw ;
-    top: 10vh;
-}
-
- .screensImg {
-    height:90vh ;
-    padding-right: 20vw ;
-    
-    
-}
- .font {
-    
-        font-family: Joan ;
- 
-    }
-
- .userFLowDiagram {
-    width: 100vw ;
-    
-}
-
- .wireframeDiagram{
-    width: 80vw ;
-    display: block ;
-margin-left: auto ;
-margin-right: auto ;
-width: 50% ;
-}
-
- .swatch{
-    height: 40vh;
-    width:40vh;
-    border-radius: 0px 30px 0px 30px;
-    
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    align-content: space-around;
 
 }
 
- .flexCont{
+.screensImg {
+    width: 90vw;
+    margin: auto;
+    padding-left: 10vw;
+
+}
+
+/* Text Styling Headings */
+
+.line {
+    float: left;
+    width: 160px;
+    margin-left: 50px;
+
+}
+
+.lineTwo {
+    float: left;
+    width: 160px;
+    margin-left: 160px;
+}
+
+h2 {
+    padding: 20px 0 20px 0;
+    margin-left: 70px;
+}
+
+h3{
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+p{
+    margin-left: 30px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    padding: 0 50px 50px 50px;
+}
+
+h6{
+    color: lightblue;
+}
+
+.linkSize{
+    font-size: smaller;
+}
+
+/* Planning Section */
+
+.objectiveFlex{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
 }
 
- .flexContStyle{
+.objectiveDetail {
+    max-width: 500px;
+}
+
+.links {
+    
+    background-color: #0D1A25;
+    color: white;
+    margin: 25px 100px 25px 25px;
+    padding: 50px 20px 20px 20px;
+    height: 290px;
+    width: 290px;
+    border-radius: 0px 30px 0px 30px;
+   
+
+}
+
+.projLink{
+    color: white;
+    font-size: smaller;
+}
+
+.projLink:hover{
+    color:#F90606;
+}
+
+.userFLowDiagram {
+    width: 100vw;
+
+}
+
+.wireframeDiagram {
+    width: 80vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+/* Style Guide Section */
+
+.styleContainerFlex {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -80,143 +150,152 @@ width: 50% ;
     row-gap: 20px;
 }
 
- .overDesc{
-    flex-grow: 2;
-    margin: 25px;
+.flexChild {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
- .links{
-    background-color: #0D1A25;
-    color: white;
-    margin: 25px;
-    padding: 20px;
-    height: fit-content;
-    width: fit-content;
-    border-radius: 0px 30px 0px 30px;
-    padding-bottom: 50px;
-    
-}
-
- .linkOut{
-    text-decoration: none;
-    color: white;
-
-}
-
- .bgColor {
-    background-color: #0D1A25;
+.swatchBox{
     height: 30vh;
     width: 30vh;
     border-radius: 0px 30px 0px 30px;
-    
+    box-shadow:5px 10px gainsboro;
 }
- .linkColor {
+
+.bgColor {
+    background-color: #0D1A25;
+}
+
+.linkColor {
     background-color: #F90606;
-    height: 30vh;
-    width: 30vh;
-    border-radius: 0px 30px 0px 30px;
-    
 }
 
- .compColor {
+.compColor {
     background-color: #122535;
-    height: 30vh;
-    width:30vh;
-    border-radius: 0px 30px 0px 30px;
-    
 }
 
- .btnColor {
+.btnColor {
     background-color: #59A9F0;
-    height: 30vh;
-    width: 30vh;
-    border-radius: 0px 30px 0px 30px;
-    
 }
 
- .swatchDesc{
+.borderBox{
+    border: 1px solid gray;
+}
+
+.centerBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swatchDesc {
     width: 20vw;
     margin-left: 20px;
 }
 
- .googleFont{
-    
-    height: 30vh;
-    width: 30vh;
-    border-radius: 0px 30px 0px 30px;
-    border: 1px solid gray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    
-}
-
- .imageBox{
-    
-    height: 30vh;
-    width: 30vh;
-    border-radius: 0px 30px 0px 30px;
-    
-}
-
-
-
- .imageMovie{
+.imageMovie {
     height: 30vh;
     width: 30vh;
     border-radius: 0px 30px 0px 30px;
 }
 
- .faIcon {
+
+
+
+/* .swatch {
+    height: 40vh;
+    width: 40vh;
+    border-radius: 0px 30px 0px 30px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .imageBox {
+
+    height: 30vh;
+    width: 30vh;
+    border-radius: 0px 30px 0px 30px;
+
+} */
+
+
+
+
+
+/* .faIcon {
     height: 10vh;
 }
- .line {
-    float: left;
-    width: 160px;
-    margin-left: 60px;
-    
 
-}
 
- .lineTwo {
-    float: left;
-    width: 160px;
-    margin-left:  160px;
-
-}
-
-.marg{
+.marg {
     margin: 5px;
     margin-left: 100px;
-    
-}
+
+} */
 
 .navMenu {
     float: right;
     display: flex;
     flex-direction: row;
-    
+
     flex-wrap: wrap;
     align-content: space-around;
     color: white;
-    
 
-    
+
+
 }
 
-.navItem{
+.navItem {
     padding-left: 1em;
-    text-decoration: none;
+    /* text-decoration: none; */
     color: white;
-    
+
 }
-.navItemLast{
+
+.navItemLast {
     padding-left: 1em;
     padding-right: 3em;
-    text-decoration: none;
-    color:white;
+    padding-bottom: .5em;
+    /* text-decoration: none; */
+    color: white;
 }
-.underline{
-    text-decoration: none;
+
+@media (max-width: 740px) {
+
+.logoImg {
+    height: 20vh;
+    z-index: 1000;
+    position: absolute;
+    padding-left: 5vw;
+    top: 10vh;
 }
+    
+}
+
+
+@media (max-width: 440px) {
+
+    .logoImg {
+        height: 15vh;
+        z-index: 1000;
+        position: absolute;
+        padding-left: 5vw;
+        top: 0;
+    }
+        
+    }
