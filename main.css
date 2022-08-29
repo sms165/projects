@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Blackboxcodedesign;
+    src: url('/src/assets/font/Blackboxcodedesign-Regular.ttf') format('truetype');
+    src: url('/src/assets/font/Blackboxcodedesign-Regular.woff') format('woff');
+
+    
+}
+
+@font-face {
+    font-family: Logo;
+    src: url('/src/assets/font/Logo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Black-y;
+    src: url('/src/assets/font/Black_y-Regular.ttf') format('truetype');
+}
