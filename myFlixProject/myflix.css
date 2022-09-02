@@ -1,8 +1,10 @@
 @font-face {
     font-family: Joan;
-    src: url('assets/font/Joan-Regular.ttf') format('truetype');
+    src: url('/assets/font/Joan-Regular.ttf') format('truetype');
 
 }
+
+
 
 * {
     padding: 0;
@@ -16,8 +18,8 @@ body {
 }
 
 .logoImg {
-    height: 30vh;
-    z-index: 1000;
+    height: 20vh;
+    /* z-index: 1000; */
     position: absolute;
     padding-left: 5vw;
     top: 2vh;
@@ -326,9 +328,9 @@ h6{
            flex-direction: row;
            flex-basis: 33.333333%;
            background-color:#122535;
-           margin-left: 20vw;
+           margin-left: 25vw;
            margin-right: 2em;
-           width: 80vw;
+           width: 75vw;
            font-size:medium;
            border: #122535;
            border-radius: 0 0 0 30px;
@@ -341,9 +343,16 @@ h6{
         color: white;
     
     }
+    .logoImg {
+        height: 25vh;
+        z-index: 1000;
+        position: absolute;
+        padding-left: 0;
+        top: 2vh;
+    }
                
            }
-           @media (max-width: 473px) {
+           @media (max-width: 500px) {
 
             .menu{
                 float: right;
