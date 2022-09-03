@@ -6,46 +6,47 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="meet.css">
-  <title>Meet App Project Documentation</title>
+  <title>myFlix Project Documentation</title>
 </head>
 
 <body>
 
   <header>
     <div class="header">
-        <img class="logoImg" src="assets/meet-app-512.png" alt="logo" />
-      <div class="menu">
-        <p class="navItem">
-          <a  class="linkSize nav" href="#overview">
+    </div>
+    <div class="menu">
+      <p class="navItem">
+        <a class="linkSize nav" href="#overview">
           Overview
         </a></p>
-        <p class="navItem">
-        <a  class="linkSize nav" href="#planning">
+      <p class="navItem">
+        <a class="linkSize nav" href="#planning">
           Planning
 
         </a></p>
-        <p class="navItem">
+      <p class="navItem">
         <a class="linkSize nav" href="#style">
-          Styling Guide
+          Testing
         </a></p>
-        <p class="navItem">
+      <p class="navItem">
         <a class="linkSize nav" href="#development">
           Development
         </a></p>
-        <p class="navItemLast">
+      <p class="navItemLast">
         <a class="linkSize nav" href="#decisions">
           Challenges
         </a></p>
-      </div>
-    </div> 
-   
+    </div>
+
+    <img class="logoImg" src="assets/meet-app-512.png" alt="logo" />
+
   </header>
 
- 
+
 
   <main>
 
-    <img class="screensImg" src="assets/screens.jpg" alt="project screenshots" />
+    <img class="screensImg" src="assets/screens-meet.jpg" alt="project screenshots" />
 
     <div class="projOverview" id="overview">
 
@@ -59,9 +60,8 @@
         <div class="objContainer">
           <div class="objectiveDetail">
             <h3>Objective</h3>
-            <p>Using React, build the client-side for an application called myFlix based on its existing server-side
-              code
-              (REST API and database).
+            <p>To build a serverless, progressive web application (PWA) with React using a test-driven development (TDD)
+              technique. The application uses the Google Calendar API to fetch upcoming events.
             </p>
           </div>
         </div>
@@ -69,15 +69,13 @@
         <div class="objContainer">
           <div class="links">
             <h4>Github:</h4>
-            <a class="projLink nav" href="https://github.com/sms165/movie-client" target="_blank">
-              https://github.com/sms165/movie-client</a>
+            <a class="projLink nav" href="https://github.com/sms165/meet" target="_blank">
+              https://github.com/sms165/meet</a>
             <br />
             <br />
-            <h4>Netlify (live version):</h4>
-            <a class="projLink nav" href="https://myflix-moviedb.netlify.app/"
-              target="_blank">https://myflix-moviedb.netlify.app/</a>
-              <h6>Username: tester</h6>
-              <h6>Password: password</h6>
+            <h4>Github Pages (live version):</h4>
+            <a class="projLink nav" href="https://sms165.github.io/meet/"
+              target="_blank">https://sms165.github.io/meet/</a>
           </div>
         </div>
 
@@ -93,24 +91,199 @@
 
 
         <div class="userStories">
-          <h3>User Stories</h3>
+          <h3>User Stories and Test Scenarios</h3>
+
+          <h4 class="heading4">User Stories format</h4>
+          <p>As a <strong>[role]</strong>, I should be able to [action] So that <strong>[benefit]</strong></p>
+          <br />
+          <br />
           <ul>
-            <li>As a user, I want to be able to access information on movies, actors, directors and genres so that I am
-              able to learn more.</li>
-            <li>As a user, I want to be able to create a profile, make a favorites list to save favorite movies, and be
-              able to update my profile data.</li>
+            <li>
+              <strong>BDD Principle: written in Gherkin's "Given-When-Then"</strong></li>
+            <ul>
+              <li> <strong> Given</strong> represents the context of the scenario. In what type of situation would this
+                scenario arise?</li>
+              <li><strong>When</strong> represents the user interaction or behavior. What does the user need to do for
+                this scenario to come into play? Ideally, you should narrow this down to one action per scenario.</li>
+              <li><strong> Then </strong>represents the expected outcomes of the scenario. What should happen when the
+                user performs this specific action in this specific content?
+              </li>
+            </ul>
           </ul>
+
+          <h3>FEATURE 1: FILTER EVENTS BY CITY</h3>
+          <h4 class="heading4">User Story</h4>
+          <p>As a user I should be able to “filter events by city” So that I can see the list of events that take place
+            in that city</p>
+          <br />
+          <h4 class="heading4">Scenario 1: When user hasn’t searched for a city, show upcoming events from all cities.
+          </h4>
+          <br />
+          <ul>
+            <li>
+              <strong>BDD Principle</strong></li>
+            <ul>
+              <li><strong> Given </strong>user hasn’t searched for any city</li>
+              <li><strong> When</strong> the user opens the app</li>
+              <li><strong> Then</strong> the user should see a list of all upcoming events</li>
+            </ul>
+          </ul>
+          <h4 class="heading4">Scenario 2: User should see a list of suggestions when they search for a city.</h4>
+
+          <br />
+          <ul>
+            <li>
+              <strong>BDD Principle</strong></li>
+            <ul>
+              <li><strong> Given </strong>the main page is open</li>
+              <li><strong> When</strong> user starts typing in the city textbox</li>
+              <li><strong> Then</strong> the user should see a list of cities (suggestions) that match what they’ve
+                typed</li>
+            </ul>
+          </ul>
+
+          <h4 class="heading4">Scenario 3: User can select a city from the suggested list.</h4>
+          <br />
+          <ul>
+            <li>
+              <strong>BDD Principle</strong></li>
+            <ul>
+              <li><strong> Given </strong>he user was typing “Berlin” in the city textbox and the list of suggested
+                cities is showing</li>
+              <li><strong> When</strong> the user selects a city (e.g., “Berlin, Germany”) from the list</li>
+              <li><strong> Then</strong> their city should be changed to that city (i.e., “Berlin, Germany”) And the
+                user should receive a list of upcoming events in that city</li>
+            </ul>
+          </ul>
+
+
+          <h3>FEATURE 2: SHOW/HIDE AN EVENT’S DETAILS</h3>
+          <h4 class="heading4">User Story</h4>
+          <p>As a user I should be able to “collapse and expand an event by clicking ” So that I can see hide or see the
+            details of an event</p>
+          <br />
+          <h4 class="heading4">Scenario 1: An event element is collapsed by default.</h4>
+          <br />
+          <ul>
+            <li>
+              <strong>BDD Principle</strong></li>
+            <ul>
+              <li><strong> Given </strong>user is on the main page</li>
+              <li><strong> When</strong> nothing is selected</li>
+              <li><strong> Then</strong> then the event details will be 'collapsed' or hidden</li>
+            </ul>
+          </ul>
+
+          <h4 class="heading4">Scenario 2: User can expand an event to see its details.</h4>
+          <br />
+          <ul>
+            <li>
+              <strong>BDD Principle</strong></li>
+            <ul>
+              <li><strong> Given </strong>user wants to see more details of a specific event</li>
+              <li><strong> When</strong> user clicks on the event to 'expand'</li>
+              <li><strong> Then</strong> the details for that event will be shown</li>
+            </ul>
+          </ul>
+
+          <h4 class="heading4">Scenario 3: User can collapse an event to hide its details.</h4>
+          <br />
+          <ul>
+            <li>
+              <strong>BDD Principle</strong></li>
+            <ul>
+              <li><strong> Given </strong>an event has been 'expanded' and the details are shown and the user wants to
+                'collapse' or hide the details</li>
+              <li><strong> When</strong> the user wants to hide the details, the user needs to click on that event</li>
+              <li><strong> Then</strong> then the event details will be 'collapsed' or hidden</li>
+            </ul>
+          </ul>
+
+
+          <h3>FEATURE 3: SPECIFY NUMBER OF EVENTS</h3>
+          <h4 class="heading4">User Story</h4>
+          <p>As a user I should be able to “specify the number of events displayed” So that I can see the number of
+            events I want to see.</p>
+          <br />
+          <h4 class="heading4">Scenario 1: When user hasn’t specified a number, 32 is the default number of events.</h4>
+          <br />
+          <ul>
+            <li>
+              <strong>BDD Principle</strong></li>
+            <ul>
+              <li><strong> Given </strong>the user is shown a list of events</li>
+              <li><strong> When</strong> the user has not specified a number of events to be shown</li>
+              <li><strong> Then</strong> the default of 32 events will be displayed</li>
+            </ul>
+          </ul>
+
+          <h4 class="heading4">Scenario 2: User can change the number of events they want to see.</h4>
+          <br />
+          <ul>
+            <li>
+              <strong>BDD Principle</strong></li>
+            <ul>
+              <li><strong> Given </strong>User can change the number of events they want to see.</li>
+              <li><strong> When</strong> the user specifies a number as to how many events they want to see</li>
+              <li><strong> Then</strong> the user specified number will be the amount of events that will be displayed
+                to the user</li>
+            </ul>
+          </ul>
+
+
+
+
+          <h3>FEATURE 4: USE THE APP WHEN OFFLINE</h3>
+          <h4 class="heading4">User Story</h4>
+          <p>As a user I should be able to “use the app offline” So that I can have access to the cached data and can
+            still see my events.</p>
+          <br />
+          <h4 class="heading4">Scenario 1: Show cached data when there’s no internet connection.</h4>
+          <br />
+          <ul>
+            <li>
+              <strong>BDD Principle</strong></li>
+            <ul>
+              <li><strong> Given </strong>the user has no internet connection</li>
+              <li><strong> When</strong> they access the app</li>
+              <li><strong> Then </strong>they can still access and view data from the cache</li>
+            </ul>
+          </ul>
+
+          <h4 class="heading4">Scenario 2: Show error when user changes the settings (city).</h4>
+          <br />
+          <ul>
+            <li>
+              <strong>BDD Principle</strong></li>
+            <ul>
+              <li><strong> Given </strong>the user locates to another location</li>
+              <li><strong> When</strong> the user changes their settings</li>
+              <li><strong> Then </strong> an error message will be shown to the user</li>
+            </ul>
+          </ul>
+
+
+          <h3>FEATURE 5: DATA VISUALIZATION</h3>
+          <h4 class="heading4">User Story</h4>
+          <p>As a user I should be able to “see charts with the number of upcoming events in each city” So that I can
+            have a better overview of the events in each city</p>
+          <br />
+          <h4 class="heading4">Scenario 1: Show a chart with the number of upcoming events in each city.</h4>
+          <br />
+          <ul>
+            <li>
+              <strong>BDD Principle</strong></li>
+            <ul>
+              <li><strong> Given </strong>user is on the app</li>
+              <li><strong> When</strong> the user wants to have a better overview of the number of events in each city
+              </li>
+              <li><strong> Then</strong> the app will display charts with the information</li>
+            </ul>
+          </ul>
+
+
         </div>
 
-        <div class="userFlow overDesc">
-          <h3>User Flow</h3>
-          <img class="userFLowDiagram" src="assets/userFlow.jpg" alt="" />
-        </div>
-
-        <div class="wireframes overDesc">
-          <h3>Wireframes</h3>
-          <img class="wireframeDiagram" src="assets/wireframeMyFlix.svg" alt="" />
-        </div>
 
       </div>
 
@@ -120,162 +293,52 @@
       <div class="projStyle" id="style">
 
         <hr class="line" />
-        <h2>Style Guide</h2>
+        <h2>Testing</h2>
         <hr class="lineTwo" />
         <br />
 
         <div class="color overDesc">
-          <h3>Color Palette</h3>
+          <h3>Unit Testing</h3>
           <p>
-            I oriented the style of the website on the classical simple style in
-            a dark theme.
+            Testing each individual "unit" (function) of an app to ensure that they work correctly by themself.
           </p>
+          <ul>
+            <li><strong> Jest</strong> is a test runner that was implemented to perform the unit tests.</li>
+            <li><strong>Enzyme </strong>is a shallow rendering API. This allows the program to be rendered only "one level deep" and not rendering a components children or a DOM. This allows Jest to perform unit testing as only the components are rendered. </li>
+          </ul>
           <br />
           <br />
-
-          <div class="styleContainerFlex">
-
-            <div class="flexChild">
-              <div class="swatchBox bgColor"></div>
-              <div class="swatchDesc">
-                <br />
-                <h4>Background Color:</h4>
-                <p>#0D1A25</p>
-              </div>
-            </div>
-
-            <div class="flexChild">
-              <div class="swatchBox compColor"></div>
-              <div class="swatchDesc">
-                <br />
-                <h4>Component Color:</h4>
-                <p>#122535</p>
-              </div>
-            </div>
-
-            <div class="flexChild">
-              <div class="swatchBox linkColor"></div>
-              <div class="swatchDesc">
-                <br />
-                <h4>Link Hover Color:</h4>
-                <p>#F90606</p>
-              </div>
-            </div>
-
-            <div class="flexChild">
-              <div class="swatchBox btnColor"></div>
-              <div class="swatchDesc">
-                <br />
-                <h4>Button Color:</h4>
-                <p>#59A9F0</p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="typography overDesc">
+          <h3>Integration Testing</h3>
+          <p>
+            Testing that each individual "unit" (function) of an app works well with the the other parts (cross-component functionality).
+          </p>
+          <ul>
+            <li><strong> Jest</strong> is a test runner that was implemented to perform the integration tests.</li>
+            <li><strong>Enzyme mount() </strong>is a full rendering API. This allows components to be fully rendered. </li>
+            <li>Mock data was used to test the components and the functionality between them or its children</li>
+          </ul>
           <br />
-          <h3>Typography</h3>
           <br />
+          
+          <h3>Acceptance Testing</h3>
+          <p>
+            Testing the application's features, written following the behavior-driven development (BDD) style.
+          </p>
+          <ul>
+            <li><strong> Jest-Cucumber</strong> uses Jest as a test runer with a Cucumber-based library that is added to the Jest.</li>
+            <li><strong>Cucumber </strong>tests are written in Gherkin's "Given, When, Then" syntax. </li>
+          </ul>
 
-          <div class="styleContainerFlex">
+          <h3>End-to-End Testing</h3>
+          <p>
+            Testing the whole application and ensuring that it works as it is supposed to.
+          </p>
+          <ul>
+            <li><strong> Puppeteer</strong> used to test apps on the Chrome Chromium browser. Simulates user actions to ensure that the UI interactions work correctly as intented.</li>
+            
+          </ul>
+           
 
-            <div class="flexChild">
-              <div class="swatchBox borderBox centerBox">
-                <div class="fontName">
-                  <h1>Joan</h1>
-                </div>
-              </div>
-              <div class="swatchDesc">
-                <br />
-                <h4>Google Font:</h4>
-                <a href="https://fonts.google.com/specimen/Joan?query=joan" target="_blank"><p>Designed by Paolo Biagini</p></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-          <div class="icongraphy">
-            <br />
-            <h3>Icongraphy</h3>
-            <br />
-
-            <div class="styleContainerFlex">
-
-              <div class="flexChild">
-                <div class="swatchBox borderBox centerBox">
-                  <div class="iconImage">
-                    <img src="assets/trashCan.svg" />
-                  </div>
-                </div>
-                <div class="swatchDesc">
-                  <br />
-                  <h4>FontAwesome:</h4>
-                  <a href="https://fontawesome.com/icons/trash-can?s=solid" target="_blank"><p>TrashCan</p></a>
-                </div>
-              </div>
-
-
-              <div class="flexChild">
-                <div class="swatchBox borderBox centerBox">
-                  <div class="iconImage">
-                    <img src="assets/pen-to-square-solid.svg" class="fa-icon">
-                  </div>
-                </div>
-                <div class="swatchDesc">
-                  <br />
-                  <h4>FontAwesome:</h4>
-                  <a href="https://fontawesome.com/icons/pen-to-square?s=solid" target="_blank"><p>Pen-to-Square</p></a>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        
-
-        <div class="images">
-          <br/>
-          <h3>Images</h3>
-          <br/>
-
-          <div class="styleContainerFlex">
-
-
-            <div class="flexChild">
-                <div class="swatchBox ">
-              <div class="movieImage">
-                <img class="imageMovie" src="assets/movie-theater.jpg" alt="" />
-              </div>
-                </div>
-              <div class="swatchDesc">
-                <br/>
-                <h4>Pixabay:</h4>
-                <a href="https://pixabay.com/photos/columbus-ohio-ohio-theatre-theater-1936633/" target="_blank"><p>Free Image</p></a>
-              </div>
-            </div>
-
-            <div class="flexChild">
-              <div class="swatchBox ">
-              <div class="movieImage">
-                <img class="imageMovie" src="assets/dorisday.jpg" /> 
-              </div>
-              </div>
-              <div class="swatchDesc">
-                <br/>
-                <h4>TheMovieDB:</h4>
-                <a href="https://www.themoviedb.org/" target="_blank"><p>Images for movies, actors, and directors.</p></a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
     <br />
     <br />
     <div class="projDevel" id="development">
@@ -288,23 +351,57 @@
       <div class="techUsed overDesc">
         <h3>Technologies Used</h3>
         <ul>
-          <li>Programmed using the MERN tech stack which stands for:</li>
+          <li><strong> HTML</strong></li>
+            <li><strong> CSS / React Bootstrap</strong></li>
+          <li><strong> React: </strong></li>
           <ul>
-            <li>MongoDB: Database used to store movie data</li>
-            <li>Express: Node.js web framework</li>
-            <li>React: JavaScript framework</li>
-            <li>
-              Node.js: runtime environment , allows JavaScript to be used on
-              the server side
-            </li>
+            <li>set up using create-react-app command</li>
           </ul>
-          <li>HTML</li>
-          <li>CSS / React Bootstrap</li>
-        </ul>
+
+          <li><strong>Serverless functions: </strong> </li>
+          <ul>
+            <li>
+              Uses a serverless architecture where each function is deployed individually in the cloud.
+            </li>
+            <li>
+              The infrastructure behind the function will be handled by the cloud provider.</li>
+            <ul>
+              <li>
+                <strong>AWS Lambda</strong> was used to provide an authorization server using serverless functions as
+                only access tokens are needed.
+              </li>
+              <ul>
+                <li>It creates a valid <strong>OAuth2</strong> token which is needed to access the <strong>Google
+                    Calendar API </strong> </li>
+              </ul>
+            </ul>
+          </ul>
+          <li><strong>Google Calendar API</strong></li>
+                <ul>
+                  <li>A protected API that requires authentificaion, this will then retrieve data about upcoming events.</li>
+               
+              </ul>
+
+
+
+
+            <h3>Authentication Process</h3>
+            <ol>
+              <li>When a user visits the site it checks if the user has been authorized or not. If they haven't they
+                will be redirected to the Google authorization screen asking them to sign in.</li>
+              <li>After successful login the user will be redirected to the app with a code parameter in the URI</li>
+              <li>This code is then sent to the serverless API (AWS Lambda) where its validity is checked with google
+                and if successful it returns an access code.</li>
+              <li>This token is then saved in a cookie which then is used to get the events from the Google Calendar
+                API.</li>
+            </ol>
+
+            
+          </ul>
       </div>
       <br />
       <br />
-      <div class="decisions" >
+      <div class="decisions">
 
         <hr class="line" />
         <h2 id="decisions">Challenges:</h2>
@@ -312,42 +409,17 @@
         <br />
         <ul>
           <li>
-            As the lessons on CareerFoundry were not up to date with the new
-            versions for example of React and React Router, I had to rely on
-            other sources to program this site. As a web developer it is
-            important to stay up to date and continue learning, which is why I
-            choose to program with the current versions.<br />
+            I wanted more practice in localStorage therefore I decided to implement a toggle for dark and light mode at the top of the page.<br />
 
           </li>
           <ul>
             <li>
-              I studied the official documentation to help me complete the
-              tasks, which was difficult at times but it gave me the
-              opportunity to gain more experience with reading documentations.<br />
+              The most difficult part was having this saved from the start screen to the data screen as the user logs in with google thereby refreshing the page. So I had to make sure that the user preference would be saved for the next visit / reload of the page. <br />
 
             </li>
           </ul>
-          <li>
-            I decided to include more views, and functions than the lesson
-            stated to have a chance to learn more.<br />
-          </li>
-          <ul>
-            <li>
-              I wanted to make the password change function on the user update
-              view more secure. The user needs to type in their old password
-              and their new password, then in the backend the program checks
-              if the old password is the same as that which is saved in the
-              database and only if it returns true the password will be
-              changed.<br />
-            </li>
-            <ul>
-              <li>
-                A consequence of this was that I had to go back to the API to
-                make a new endpoint which has the logic behind it to handle
-                the password comparison and change.<br /><br />
-              </li>
-            </ul>
-          </ul>
+          
+          
         </ul>
       </div>
     </div>
