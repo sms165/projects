@@ -18,11 +18,11 @@ body {
 }
 
 .logoImg {
-    height: 15vh;
+    height: 20vh;
     /* z-index: 1000; */
     position: absolute;
     padding-left: 5vw;
-    top: 0vh;
+    top: 2vh;
 }
 
 
@@ -30,7 +30,7 @@ body {
     /* padding-right:0; */
     height: 15vh;
     width: 100vw;
-    background-color: #304366;
+    background-color: #0D1A25;
     display: flex;
     justify-content: flex-end;
     float: right;
@@ -44,14 +44,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-right: 1em;
+    margin-right: 2em;
     margin-top: .5em;
 }
 
 .yblackbox-logo{
     width: 15vw;
     
-    
+    float: right;
+    top: 0;
 }
 
 .projects-logo{
@@ -63,12 +64,13 @@ body {
 
 
 
+
 .menu{
     display: flex;
     justify-content: flex-end;
     flex-wrap: nowrap;
     flex-direction: row;
-    background-color:#304366;
+    background-color:#122535;
     margin-left: 50vw;
     width: 50vw;
     font-size:medium;
@@ -81,6 +83,10 @@ body {
     margin: auto;
     padding-left: 10vw;
 
+}
+
+.projOverview{
+    padding-top: 3vh;
 }
 
 /* Text Styling Headings */
@@ -101,15 +107,12 @@ body {
 h2 {
     padding: 20px 0 20px 0;
     margin-left: 70px;
+    white-space: nowrap;
 }
 
 h3{
     margin-left: 40px;
     margin-bottom: 10px;
-}
-
-.heading4{
-    margin-left: 35px;
 }
 
 p{
@@ -126,12 +129,9 @@ a{
     text-decoration: none;
 }
 
-ul>ul>ul{
-    padding: 0;
-}
 
 a:hover{
-    color:#FD768C;
+    color:#F90606;
 }
 
 ul{
@@ -162,12 +162,12 @@ h6{
 
 .links {
     
-    background-color: #304366;
+    background-color: #0D1A25;
     color: white;
     margin: 25px 100px 25px 25px;
     padding: 50px 20px 20px 20px;
-    height: 290px;
-    width: 290px;
+    height: 320px;
+    width: 320px;
     border-radius: 0px 30px 0px 30px;
    
 
@@ -296,6 +296,9 @@ h6{
     padding-left: 5vw;
     top: 10vh;
 }
+.projOverview{
+    padding-top: 10vh;
+}
     
 }
 
@@ -309,6 +312,10 @@ h6{
         padding-left: 5vw;
         top: 0;
     }
+
+    .projOverview{
+        padding-top: 20vh;
+    }
         
     }
 
@@ -320,15 +327,13 @@ h6{
         justify-content: flex-end;
         flex-wrap: nowrap;
         flex-direction: row;
-        /* background-color:#122535; */
+        background-color:#122535;
         margin-left: 40vw;
         width: 60vw;
         font-size:medium;
-        /* border: #122535; */
+        border: #122535;
         border-radius: 0 0 0 30px;
     }
-   
-        
             
         }
 
@@ -339,13 +344,26 @@ h6{
            justify-content: flex-end;
            flex-wrap: nowrap;
            flex-direction: row;
-           /* background-color:#122535; */
+           background-color:#122535;
            margin-left: 30vw;
            width: 70vw;
            font-size:medium;
-           /* border: #122535; */
+           border: #122535;
            border-radius: 0 0 0 30px;
        }
+
+       .yblackbox-logo{
+        width: 20vw;
+        
+        
+    }
+    
+    .projects-logo{
+        width: 13vw;
+        
+     
+    
+    }
                
            }
 
@@ -357,12 +375,12 @@ h6{
            flex-wrap: wrap;
            flex-direction: row;
            flex-basis: 33.333333%;
-           /* background-color:#122535; */
+           background-color:#122535;
            margin-left: 25vw;
            margin-right: 2em;
            width: 75vw;
            font-size:medium;
-           /* border: #122535; */
+           border: #122535;
            border-radius: 0 0 0 30px;
        }
        .navItem {
@@ -374,21 +392,22 @@ h6{
     
     }
     .logoImg {
-        height: 15vh;
+        height: 25vh;
         z-index: 1000;
         position: absolute;
         padding-left: 0;
-        top: 0vh;
+        top: 2vh;
     }
 
+
     .yblackbox-logo{
-        width: 40vw;
+        width: 20vw;
         
         
     }
     
     .projects-logo{
-        width: 30vw;
+        width: 15vw;
         
      
     
@@ -404,12 +423,12 @@ h6{
            flex-wrap: wrap;
            flex-direction: column;
            /* flex-basis: 33.333333%; */
-           /* background-color:#122535; */
+           background-color:#122535;
            /* margin-left: 70vw; */
            /* margin-right: 2em; */
            width: fit-content;
            font-size:medium;
-           /* border: #122535; */
+           border: #122535;
            border-radius: 0 0 0 30px;
        }
        .navItem {
@@ -421,21 +440,22 @@ h6{
     
     }
 
+
     .yblackbox-logo{
-        width: 40vw;
+        width: 20vw;
         
         
     }
     
     .projects-logo{
-        width: 30vw;
+        width: 15vw;
         
      
     
     }
 
-    
+    .projOverview{
+        padding-top: 20vh;
+    }
                
            }
-   
-   

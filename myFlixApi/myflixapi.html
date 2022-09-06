@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="myflixapi.css">
+  <title>myFlix API Project Documentation</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="header">
+
+      <div class="ybb">
+       
+        <div class="yblackbox-logo">
+          <a href="/index.html">
+          <img src="../assets/YBlackBox-white.svg" alt="">
+          </a>
+          </div>
+          <div class="projects-logo">
+          <a href="/index.html">
+            <img src="../assets/Projects-white.svg" alt="">
+            </a>
+          </div>
+  </div>
+
+    </div>
+      <div class="menu">
+        <p class="navItem">
+          <a  class="linkSize nav" href="#overview">
+          Overview
+        </a></p>
+        <p class="navItem">
+        <a  class="linkSize nav" href="#planning">
+          Planning
+
+        </a></p>
+        <p class="navItem">
+        <a class="linkSize nav" href="#style">
+          Styling Guide
+        </a></p>
+        <p class="navItem">
+        <a class="linkSize nav" href="#development">
+          Development
+        </a></p>
+        <p class="navItemLast">
+        <a class="linkSize nav" href="#decisions">
+          Challenges
+        </a></p>
+      </div>
+   
+  </header>
+
+  <img class="logoImg" src="/myFlixProject/assets/logo-white-small.svg" alt="logo" />
+
+  <main>
+
+    <!-- <img class="screensImg" src="assets/screens.jpg" alt="project screenshots" /> -->
+    <!-- <a href="myflixapiDocu.html">API Documentation</a> -->
+    <br />
+    <br />
+    <div class="projOverview" id="overview">
+
+      <hr class="line" />
+      <h2>Project Overview</h2>
+      <hr class="lineTwo" />
+      <br />
+
+      <div class="objectiveFlex">
+
+        <div class="objContainer">
+          <div class="objectiveDetail">
+            <h3>Objective</h3>
+            <p>To build the server-side component of a “movies” web application. An API that allows for queries to the movie database so that the user can interact with the client-side component by receiving, updating, and data.
+            </p>
+          </div>
+        </div>
+
+        <div class="objContainer">
+          <div class="links">
+            <h4>Github:</h4>
+            <a class="projLink nav" href="https://github.com/sms165/movie_api" target="_blank">
+                https://github.com/sms165/movie_api</a>
+            <br />
+            <br />
+            <!-- <h4>Heroku (live version):</h4>
+            <a class="projLink nav" href="https://my-flix-careerfoundry.herokuapp.com"
+              target="_blank">https://my-flix-careerfoundry.herokuapp.com</a>
+              <br />
+            <br /> -->
+            <h4>Documentation:</h4>
+                 <a  class="projLink nav" href="myflixapiDocu.html" target="_blank">API Documentation</a>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="projPlanning" id="planning">
+
+        <hr class="line " />
+        <h2>Planning</h2>
+        <hr class="lineTwo" />
+        <br />
+
+
+        <div class="userStories">
+          <h3>User Stories</h3>
+          <ul>
+            <li>As a user, I want to be able to receive information on movies, directors, and genres so that I can learn more about movies I’ve watched or am interested in.</li>
+            <li>As a user, I want to be able to receive information on movies, directors, and genres so that I can learn more about movies I’ve watched or am interested in.</li>
+          </ul>
+        </div>
+
+      <br />
+      <br />
+
+     
+
+       
+    <div class="projDevel" id="development">
+      <hr class="line" />
+
+      <h2>Development</h2>
+      <hr class="lineTwo" />
+      <br />
+
+      <div class="techUsed overDesc">
+        <h3>Technologies Used</h3>
+        <ul>
+          <li>REST API:</li>
+          <ul>
+            <li>uses HTTP requests to receive, send, create, and delete data or files.</li>
+            
+            <li>Node.js</li>
+            <ul>
+                <li>
+                runtime environment for executing JavaScript without a browser
+            </li>
+            <li>npm: default node package manager</li>
+            <li>Modules:</li>
+            <ul><li>
+                HTTP: to create a web server
+            </li>
+        <li>URL: splits up a web address into readable parts</li>
+    <li>File System: managing file input and output</li></ul>
+    <li>Express.js: server side framework, simplifies Node.js syntax</li>
+    <li>Morgan: logging middleware, to log the request URL to the terminal</li>
+            </ul>
+          </ul>
+          
+          <li>MongoDB</li>
+          <ul>
+            <li>A non relational database (NoSQL) was implemented. As these don't have predefined schemas or enforced "relationships" between the different types of dat they store, they are simpler to create and alter. They also offer more flexibilty.</li>
+          </ul>
+          <li>Mongoose</li>
+          <ul><li>Enforces uniformity in the data on the application-side. It acts as a translation service between the database layer and the rest of the application.</li></ul>
+          <li>Postman: used to test the URL endpoints of the API</li>
+          <li>Authentication</li>
+          <ul>
+            <li>
+                HTTP 
+            </li><ul>
+                <li>used as the initial authentification when users make a login request</li>
+            </ul>
+            <li>JWT</li>
+            <ul><li>
+                A JWT token is generated for the user after login. Only users with a token can make requests on the website.
+            </li></ul>
+            <li>Passport: an authentication middleware</li>
+          </ul>
+          <li>Encryption</li>
+          <ul><li>bcrypt: a node.js module to hash passwords</li></ul>
+          <li>HTML</li>
+          <li>CSS / React Bootstrap</li>
+          <li>JSON</li>
+          <li>Heroku: used for hosting services</li>
+        </ul>
+        
+      </div>
+      <br />
+      <br />
+      <div class="decisions" >
+
+        <hr class="line" />
+        <h2 id="decisions">Challenges:</h2>
+        <hr class="lineTwo" />
+        <br />
+        <ul>
+          <li>
+            I had used reference tables for some components such as actors and genres, which was not specified in the CareerFoundry lesson.<br />
+
+          </li>
+          <ul>
+            <li>
+              To build the endpoints for these components I had to research online how to get the data returned when making a HTTP request. I used the keyword populate to get the data from the reference table. Then I used a filter function to filter out the movies with the searched for keyword<br />
+
+            </li>
+          </ul>
+        </ul>
+      </div>
+      </div>
+    </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

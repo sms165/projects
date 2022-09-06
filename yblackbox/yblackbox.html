@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="yblackbox.css">
+  <title>myFlix Project Documentation</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="header">
+
+      <div class="ybb">
+       
+        <div class="yblackbox-logo">
+          <a href="/index.html">
+          <img src="../assets/YBlackBox-white.svg" alt="">
+          </a>
+          </div>
+          <div class="projects-logo">
+          <a href="/index.html">
+            <img src="../assets/Projects-white.svg" alt="">
+            </a>
+          </div>
+  </div>
+
+    </div>
+      <div class="menu">
+        <p class="navItem">
+          <a  class="linkSize nav" href="#overview">
+          Overview
+        </a></p>
+        <p class="navItem">
+        <a  class="linkSize nav" href="#planning">
+          Planning
+
+        </a></p>
+        <p class="navItem">
+        <a class="linkSize nav" href="#style">
+          Styling Guide
+        </a></p>
+        <p class="navItem">
+        <a class="linkSize nav" href="#development">
+          Development
+        </a></p>
+        <p class="navItemLast">
+        <a class="linkSize nav" href="#decisions">
+          Challenges
+        </a></p>
+      </div>
+   
+  </header>
+
+  <img class="logoImg" src="../assets/yblackbox-logo3.svg" alt="logo" />
+
+  <main>
+
+    <img class="screensImg" src="assets/screens-yblackbox.jpg" alt="project screenshots" />
+
+    <div class="projOverview" id="overview">
+
+      <hr class="line" />
+      <h2>Project Overview</h2>
+      <hr class="lineTwo" />
+      <br />
+
+      <div class="objectiveFlex">
+
+        <div class="objContainer">
+          <div class="objectiveDetail">
+            <h3>Objective</h3>
+            <p>Build a portfolio page to showcase my projects, skills, and experience, while also showcasing my skills with the portfolio itself.
+            </p>
+          </div>
+        </div>
+
+        <div class="objContainer">
+          <div class="links">
+            <!-- <h4>Github:</h4>
+            <a class="projLink nav" href="https://github.com/sms165/movie-client" target="_blank">
+              https://github.com/sms165/movie-client</a>
+            <br />
+            <br /> -->
+            <h4>Hostinger (live version):</h4>
+            <a class="projLink nav" href="https://yblackbox.com"
+              target="_blank">https://yblackbox.com</a>
+              
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="projPlanning" id="planning">
+
+        <hr class="line " />
+        <h2>Planning</h2>
+        <hr class="lineTwo" />
+        <br />
+
+
+        <div class="userStories">
+          <h3>Logo Design</h3>
+          <p>I wanted a logo that includes a cube in the perspective where the edges form the letter Y.</p>
+        </div>
+
+        <div class="userFlow overDesc">
+          <h3>Layout prototypes</h3>
+          <p>I drew different layouts to see which would be the best. I decided on choice A because I felt it was cleaner, simpler and allowed the user to have a better overview of the contents right away.</p>
+          <img class="userFLowDiagram" src="assets/options.svg" alt="" />
+        </div>
+
+        <div class="wireframes overDesc">
+          <h3>Wireframes</h3>
+          <img class="wireframeDiagram" src="assets/wireframes-yblackbox.svg" alt="" />
+        </div>
+
+      </div>
+
+      <br />
+      <br />
+
+      <div class="projStyle" id="style">
+
+        <hr class="line" />
+        <h2>Style Guide</h2>
+        <hr class="lineTwo" />
+        <br />
+
+        <div class="color overDesc">
+          <h3>Color Palette</h3>
+          <p>
+            I wanted a color that pops out on black which is why I decided to orient my color palette around neon colors.
+          </p>
+          <br />
+          <br />
+
+          <div class="styleContainerFlex">
+
+            <div class="flexChild">
+              <div class="swatchBox color1"></div>
+              <div class="swatchDesc">
+                <br />
+                <h4>Color 1:</h4>
+                <p>#ffff00</p>
+              </div>
+            </div>
+
+            <div class="flexChild">
+              <div class="swatchBox color2"></div>
+              <div class="swatchDesc">
+                <br />
+                <h4>Color 2:</h4>
+                <p>#8cff32</p>
+              </div>
+            </div>
+
+            <div class="flexChild">
+              <div class="swatchBox color3"></div>
+              <div class="swatchDesc">
+                <br />
+                <h4>Color 3:</h4>
+                <p>#ff00ff</p>
+              </div>
+            </div>
+
+            <div class="flexChild">
+              <div class="swatchBox color4"></div>
+              <div class="swatchDesc">
+                <br />
+                <h4>Color 4:</h4>
+                <p>#00ffff</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="typography overDesc">
+          <br />
+          <h3>Typography</h3>
+          <br />
+
+          <div class="styleContainerFlex">
+
+            <div class="flexChild">
+              <div class="swatchBox borderBox centerBox">
+                <div class="fontName">
+                  <h1 class="fontRaleway">Raleway</h1>
+                </div>
+              </div>
+              <div class="swatchDesc2">
+                <br />
+                <h4>Google Font:</h4>
+                <a href="https://fonts.google.com/specimen/Raleway?query=raleway" target="_blank"><p>Designed by Matt McInerney, Pablo Impallari, Rodrigo Fuenzalida</p></a>
+              </div>
+            </div>
+          
+          <div class="flexChild">
+            <div class="swatchBox borderBox centerBox">
+              <div class="fontName">
+                <h1 class="fontYBlackBox"><span class="fontY">Y</span> BlackBox</h1>
+              </div>
+            </div>
+            <div class="swatchDesc2">
+              <br />
+              <h4>Own Font:</h4>
+              <p>This font was created by me.</p>
+            </div>
+          </div>
+        </div>
+
+</div>
+        </div>
+
+          
+
+      
+    </div>
+    <br />
+    <br />
+    <div class="projDevel" id="development">
+      <hr class="line" />
+
+      <h2>Development</h2>
+      <hr class="lineTwo" />
+      <br />
+
+      <div class="techUsed overDesc">
+        <h3>Technologies Used</h3>
+        <ul>
+            <li>Javascript: React</li>
+            <li>CSS: SCSS</li>
+            <li>Packages used:</li>
+            <ul>
+              <li>react-spring/parallax</li>
+              <ul>
+                <li>Used for the animated background and scroll effect</li>
+              </ul>
+              <li>emailjs-com, sweetalert2</li>
+              <ul><li>
+                Used to forward messages from the contact form to my email inbox.
+              </li></ul>
+              <li>react-router-dom, react-router-hash-link</li>
+              <ul>
+                <li>Link the navigation links to the correct section in the page</li>
+              </ul>
+              <li>react-spring, use-gesture/react, nuka-carousel</li>
+              <ul><li>
+                For the project section the card design and animation
+              </li></ul>
+            </ul>
+            
+            
+        </ul>
+      </div>
+      <br />
+      <br />
+      <div class="decisions" >
+
+        <hr class="line" />
+        <h2 id="decisions">Challenges:</h2>
+        <hr class="lineTwo" />
+        <br />
+        <ul>
+          <li>
+            A challenge I encountered was that the navigation that is spinning around the cube was working in the Chrome browser and Firefox but it was not working in Safari.<br />
+
+          </li>
+          <ul>
+            <li>
+              I examined the problem with the inspector for each browser and saw that for some reason the 'li' element was not moving in Safari. I researched online and asked others for help but I found no answer. Finally I realized that the first animation that has the elements move from the center to the circle was working so I compared them to see what was different. I realized for some reason safari does not like an animation at 100% transform 360deg so I split this up in increments and this worked.</li><br />
+
+            
+          </ul>
+          <li>
+            I had problems creating links in the Navigation so that when they were clicked they would scroll to the right section.<br />
+          </li>
+          <ul>
+            <li>
+              I tried this various ways till I found 'Hashlink' which works similarly to an anchor link in HTML. I didnt understand this correctly at first but after trying it out at various places in the code I was able to figure out how to correctly ultilize it. <br />
+            </li>
+            
+          </ul>
+          <li>Another challenge was having the text at the side change depending on the section the user is in.  </li>
+          <ul>
+            <li>My first solution was to use the x-offset to see how far down the user has scrolled. This did not work as I quickly realized this drastically changed depending on screen height, which caused the text to show up at the wrong time</li>
+          </ul>
+          <ul>
+            <li>I finally found a solution that works and that was to use the IntersectionObserver which let me determine when to blend in the text and when to blend it out.</li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

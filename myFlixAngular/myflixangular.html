@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myflixangular.css">
+    <title>myFlix Project Documentation</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+
+            <div class="ybb">
+
+                <div class="yblackbox-logo">
+                    <a href="/index.html">
+                        <img src="../assets/YBlackBox-white.svg" alt="">
+                    </a>
+                </div>
+                <div class="projects-logo">
+                    <a href="/index.html">
+                        <img src="../assets/Projects-white.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="menu">
+            <p class="navItem">
+                <a class="linkSize nav" href="#overview">
+                    Overview
+                </a></p>
+            <p class="navItem">
+                <a class="linkSize nav" href="#planning">
+                    Planning
+
+                </a></p>
+            <p class="navItem">
+                <a class="linkSize nav" href="#style">
+                    Styling Guide
+                </a></p>
+            <p class="navItem">
+                <a class="linkSize nav" href="#development">
+                    Development
+                </a></p>
+            <p class="navItemLast">
+                <a class="linkSize nav" href="#decisions">
+                    Challenges
+                </a></p>
+        </div>
+
+    </header>
+
+    <img class="logoImg" src="assets/logo-white-small-angular.svg" alt="logo" />
+
+    <main>
+
+        <img class="screensImg" src="assets/myFlixAngularScreens.jpg" alt="project screenshots" />
+
+        <div class="projOverview" id="overview">
+
+            <hr class="line" />
+            <h2>Project Overview</h2>
+            <hr class="lineTwo" />
+            <br />
+
+            <div class="objectiveFlex">
+
+                <div class="objContainer">
+                    <div class="objectiveDetail">
+                        <h3>Objective</h3>
+                        <p>
+                            Using Angular, build the client-side for an application called myFlix based on its existing server-side code (REST API and database).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="objContainer">
+                    <div class="links">
+                        <h4>Github:</h4>
+                        <a class="projLink nav" href="https://github.com/sms165/myFlix-Angular-client " target="_blank">
+                            https://github.com/sms165/myFlix-Angular-client </a>
+                        <br />
+                        <br />
+                        <h4>Github (live version):</h4>
+                        <a class="projLink nav" href="https://sms165.github.io/myFlix-Angular-client/welcome"
+                            target="_blank">https://sms165.github.io/myFlix-Angular-client/welcome</a>
+                        <h6>Username: tester</h6>
+                        <h6>Password: password</h6>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="projPlanning" id="planning">
+
+                <hr class="line " />
+                <h2>Planning</h2>
+                <hr class="lineTwo" />
+                <br />
+
+
+                <div class="userStories">
+                    <h3>User Stories</h3>
+                    <ul>
+                        <li> As a user, I want to be able to receive information on movies, directors, and genres so that I can learn more about movies I’ve watched or am interested in.</li>
+                        <li> As a user, I want to be able to create a profile so I can save data about my favorite
+                            movies</li>
+                    </ul>
+                </div>
+
+                
+
+            </div>
+
+            <br />
+            <br />
+
+            <div class="projStyle" id="style">
+
+                <hr class="line" />
+                <h2>Style Guide</h2>
+                <hr class="lineTwo" />
+                <br />
+
+                <div class="color overDesc">
+                    <h3>Color Palette</h3>
+                    <p>
+                        I oriented the style of the website on the stylings I used for the React myFlix App.
+                    </p>
+                    <br />
+                    <br />
+
+                    <div class="styleContainerFlex">
+
+                        <div class="flexChild">
+                            <div class="swatchBox bgColor"></div>
+                            <div class="swatchDesc">
+                                <br />
+                                <h4>Background Color:</h4>
+                                <p>#0D1A25</p>
+                            </div>
+                        </div>
+
+                        <div class="flexChild">
+                            <div class="swatchBox compColor"></div>
+                            <div class="swatchDesc">
+                                <br />
+                                <h4>Component Color:</h4>
+                                <p>#122535</p>
+                            </div>
+                        </div>
+
+                        <div class="flexChild">
+                            <div class="swatchBox linkColor"></div>
+                            <div class="swatchDesc">
+                                <br />
+                                <h4>Link Hover Color:</h4>
+                                <p>#F90606</p>
+                            </div>
+                        </div>
+
+                        <div class="flexChild">
+                            <div class="swatchBox btnColor"></div>
+                            <div class="swatchDesc">
+                                <br />
+                                <h4>Button Color:</h4>
+                                <p>#59A9F0</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+
+                </div>
+
+
+
+                <div class="images">
+                    <br />
+                    <h3>Images</h3>
+                    <br />
+
+                    <div class="styleContainerFlex">
+
+
+                        <div class="flexChild">
+                            <div class="swatchBox ">
+                                <div class="movieImage">
+                                    <img class="imageMovie" src="/myFlixProject/assets/movie-theater.jpg" alt="" />
+                                </div>
+                            </div>
+                            <div class="swatchDesc">
+                                <br />
+                                <h4>Pixabay:</h4>
+                                <a href="https://pixabay.com/photos/columbus-ohio-ohio-theatre-theater-1936633/"
+                                    target="_blank">
+                                    <p>Free Image</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flexChild">
+                            <div class="swatchBox ">
+                                <div class="movieImage">
+                                    <img class="imageMovie" src="/myFlixProject/assets/dorisday.jpg" />
+                                </div>
+                            </div>
+                            <div class="swatchDesc">
+                                <br />
+                                <h4>TheMovieDB:</h4>
+                                <a href="https://www.themoviedb.org/" target="_blank">
+                                    <p>Images for movies, actors, and directors.</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+           
+        </div>
+        <br />
+        <br />
+        <div class="projDevel" id="development">
+            <hr class="line" />
+
+            <h2>Development</h2>
+            <hr class="lineTwo" />
+            <br />
+
+            <div class="techUsed overDesc">
+                <h3>Technologies Used</h3>
+                <ul>
+                    <li>Angular</li>
+                    <li>Typescript</li>
+                    <li>HTML</li>
+                    <li>CSS / React Bootstrap</li>
+                    <li>Material Design </li>
+                </ul>
+            </div>
+            <br />
+            <br />
+            <div class="decisions">
+
+                <hr class="line" />
+                <h2 id="decisions">Challenges:</h2>
+                <hr class="lineTwo" />
+                <br />
+                <ul>
+                    <li>
+                        A problem I faced was that the movies were not loading when the user signed in, instead they only loaded after I refreshed the screen.<br />
+
+                    </li>
+                    <ul>
+                        <li>
+                            I was finally able to solve this problem myself when I realized that the token for the authorization was not saved correctly and I had to add it to local storage and then add it to the API call for getting the movie data.<br />
+
+                        </li>
+                    </ul>
+                   
+                    </ul>
+                
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

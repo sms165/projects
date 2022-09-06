@@ -1,31 +1,40 @@
 @font-face {
     font-family: Blackboxcodedesign;
-    src: url('assets/fonts/Blackboxcodedesign-Regular.ttf') format('truetype');
-
-
-
-}
-
-@font-face {
-    font-family: Joan;
-    src: url('assets/fonts/Joan-Regular.ttf') format('truetype');
-
-}
-
-@font-face {
-    font-family: Notes;
-    src: url("assets/fonts/Notes-Regular.ttf") format("truetype");
+    src: url('/src/assets/font/Blackboxcodedesign-Regular.ttf') format('truetype');
+    src: url('/src/assets/font/Blackboxcodedesign-Regular.woff') format('woff');
+    font-display: swap;
+    
 }
 
 @font-face {
     font-family: Logo;
-    src: url('assets/fonts/Logo-Regular.ttf') format('truetype');
+    src: url('/src/assets/font/Logo-Regular.ttf') format('truetype');
+    src: url('/src/assets/font/Logo-Regular.woff') format('woff');
+    font-display: swap;
 }
 
 @font-face {
     font-family: Black-y;
-    src: url('assets/fonts/Black_y-Regular.ttf') format('truetype');
+    src: url('/src/assets/font/Black_y-Regular.ttf') format('truetype');
+    src: url('/src/assets/font/Black_y-Regular.woff') format('woff');
+    font-display: swap;
 }
+
+@font-face {
+    font-family: Joan;
+    src: url('/src/assets/font/Joan-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: Notes;
+    src: url("assets/fonts/Notes-Regular.ttf") format("truetype");
+    src: url("assets/fonts/Notes-Regular.woff") format("woff");
+}
+
+
 
 body {
     background-image: url("/assets/backgroundFinalDarker.svg");
@@ -205,6 +214,10 @@ a:hover {
 }
 
 .hostedBtn {
+    margin: .5rem;
+}
+
+.herokuBtn{
     margin: .5rem;
 }
 
