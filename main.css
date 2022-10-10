@@ -37,7 +37,7 @@
 
 
 body {
-    background-image: url("/assets/backgroundFinalDarker.svg");
+    background-image: url("assets/backgroundFinalDarker.svg");
 
     /* background-image: linear-gradient(to right, white, black); */
     font-family: Joan;
@@ -45,6 +45,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 
 .projectTitle {
     font-family: Notes;
