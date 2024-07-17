@@ -3,7 +3,6 @@
     src: url('/src/assets/font/Blackboxcodedesign-Regular.ttf') format('truetype');
     src: url('/src/assets/font/Blackboxcodedesign-Regular.woff') format('woff');
     font-display: swap;
-    
 }
 
 @font-face {
@@ -26,222 +25,187 @@
     font-display: swap;
 }
 
-
-
 @font-face {
     font-family: Notes;
     src: url("assets/fonts/Notes-Regular.ttf") format("truetype");
     src: url("assets/fonts/Notes-Regular.woff") format("woff");
 }
 
+@font-face {
+    font-family: Michroma;
+    src: url("assets/font/Michroma-Regular.ttf") format("truetype");
+}
 
+@font-face {
+    font-family: Unica;
+    src: url("assets/font/UnicaOne-Regular.ttf") format("truetype");
+}
 
 body {
-    background-image: url("assets/backgroundFinalDarker.svg");
-
-    /* background-image: linear-gradient(to right, white, black); */
-    font-family: Joan;
-
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-
-.projectTitle {
-    font-family: Notes;
-    font-size: 3em;
-    text-align: center;
-    margin: 0;
-}
-
-.projectSubtitle {
-    font-family: Notes;
-    font-size: 1em;
-    text-align: center;
-    margin: 0;
-}
-
-ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0 !important;
-    padding: 0 !important;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-
-
-}
-
-li {
-    list-style: none;
-    margin: .5rem;
-    border: .5px solid rgba(115, 113, 113, 0.7);
-    width: fit-content;
-    border-radius: 10px;
-    padding: 8px;
-
-}
-
-a {
-    border: 2px solid rgba(168, 168, 168, .5);
-
-    padding: 8px;
-    width: fit-content;
-    /* border-image: linear-gradient( #00ccff, #d400d4); */
+    background-color: black;
     color: white;
-    text-decoration: none;
-    border-image: linear-gradient(to right, #d400d4, #00ccff, ) 1;
-
+    font-family: Unica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
-
-a:hover {
-
-    border-image: linear-gradient(to right, #00ccff, #d400d4) 1;
-    transition: 3s;
+h2 {
+    font-family: Unica;
+    transition: color 1s ease-in-out;
+    margin: 0;
 }
-
-
 
 .projectsSite {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.cubeContainer {
-    height: 110vh;
-    width: 80vw;
-    margin-left: -300px;
-    margin-top: 0px;
-    z-index: 0;
-    position: fixed;
-
-
-}
-
-.cubeImg {
-    height: 100%;
-
-}
-
-
-.name {
-    
-    width: 20vw;
-    padding-right: 3vw;
-    position: sticky;
-    top: 0px;
-    right: 0;
-
-
-
-}
-
-
 
 .textContainer {
-    margin-left: 70vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
 }
 
-.projectsContainer {
-    /* z-index: 1000; */
-    width: 10vw;
-    padding-right: 1vw;
-    position: sticky;
-    top: 0px;
-    right: 0;
-    margin-left: 80vw;
+.ybProj {
+    height: 20vh;
+    transition: transform 0.3s ease-in-out;
+}
 
+.ybProj:hover {
+    transform: scale(1.1);
 }
 
 .projectsListContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     padding: 10px;
-
+    width: 100%;
+    max-width: 1200px;
 }
 
 .projectListItem {
-    background-color: rgba(0, 0, 0, .3);
-    /* margin-right: 10px; */
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3));
     color: white;
-    padding: 0px 10px 10px 10px;
-    width: fit-content;
-    /* border: 1px solid black; */
+    padding: 20px;
     border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
 }
+
+.projectListItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8), -5px -5px 20px rgba(255, 255, 255, 0.2);
+}
+
+.projectTitle {
+    font-family: Unica;
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+/* .projectSubtitle {
+    font-family: Notes;
+    font-size: 1em;
+    margin: 0;
+} */
 
 .projectImage {
     margin-bottom: 1em;
     height: 20vh;
     display: flex;
-    justify-items: center;
     justify-content: center;
-    /* background-color: #162a3a; */
+    align-items: center;
+    padding-bottom: 4vh;
 }
 
-.imgBg {
-    margin-left: 50px;
-    margin-right: 50px;
-    background-color: rgba(0, 0, 0, .5);
+.projectImage img {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.projectSkills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 1em;
+}
+
+.projectSkills ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.projectSkills li {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 10px;
 }
 
 .projectDescription {
-    text-align: center;
-    padding: 1em;
+    margin-bottom: 1em;
 }
 
 .projectLinks {
-    display: grid;
-    text-align: center;
-    grid-gap: 20px 20px;
-}
-
-.projectOut {
     display: flex;
-    /* text-align: center; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.projectMore, .projectOut {
+    display: flex;
     justify-content: center;
-    font-size: smaller;
-
+    width: 100%;
 }
 
-.projectMore {
-    font-size: larger;
+a {
+    border: 2px solid rgba(168, 168, 168, 0.5);
+    padding: 8px 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
-.githubBtn {
-    margin: .5rem;
+a:hover {
+    border-image: linear-gradient(to right, #00ccff, #d400d4) 1;
+    color: #00ccff;
 }
 
-.hostedBtn {
-    margin: .5rem;
+.githubBtn, .hostedBtn, .herokuBtn {
+    margin: 0.5rem;
 }
 
-.herokuBtn{
-    margin: .5rem;
-}
-
-
-
-@media all and (max-width: 500px) {
+@media all and (max-width: 1265px) {
     .projectsListContainer {
-        grid-template-columns: 1fr;
+        grid-template-columns: 40vw 40vw;
+        padding: 4vw;
     }
 }
 
-@media all and (min-width: 500px) and (max-width:750px) {
+@media all and  (max-width: 933px) {
     .projectsListContainer {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 45vw 45vw;
     }
-
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 789px) {
     .projectsListContainer {
-        grid-gap: 10px;
+        grid-template-columns: 90vw;
+        padding: 4vw;
     }
-
-
 }

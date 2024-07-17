@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="snakeporium.css">
+    <title>myFlix Project Documentation</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+
+<h2 class="name">Snakeporium</h2>
+            <a href="../index.html">
+                <img class="ybProj" src="../assets/images/logo_blue2.svg" alt="yBlackBox" >
+                </a>
+
+        </div>
+        <div class="menu">
+            <p class="navItem">
+                <a class="linkSize nav" href="#overview">
+                    Overview
+                </a></p>
+            <p class="navItem">
+                <a class="linkSize nav" href="#planning">
+                    Planning
+
+                </a></p>
+            <p class="navItem">
+                <a class="linkSize nav" href="#style">
+                    Styling Guide
+                </a></p>
+            <p class="navItem">
+                <a class="linkSize nav" href="#development">
+                    Development
+                </a></p>
+            <p class="navItemLast">
+                <a class="linkSize nav" href="#decisions">
+                    Challenges
+                </a></p>
+        </div>
+ <img class="logoImg" src="assets/snake-logo2.png" alt="logo" />
+    </header>
+
+   
+
+    <main>
+
+        <img class="screensImg" src="assets/screens.jpg" alt="project screenshots" />
+
+        <div class="projOverview" id="overview">
+
+            <hr class="line" />
+            <h2>Project Overview</h2>
+            <hr class="lineTwo" />
+            <br />
+
+            <div class="objectiveFlex">
+
+                <div class="objContainer">
+                    <div class="objectiveDetail">
+                        <h3>Objective</h3>
+                        <p>
+                            Using Angular in the frontend and Springboot in the backend to build a web shop.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="objContainer">
+                    <div class="links">
+                        <h4>Github-frontend:</h4>
+                        <a class="projLink nav" href="https://github.com/sms165/snakeporium-frontend " target="_blank">
+                            https://github.com/sms165/snakeporium-frontend </a>
+                        <br />
+                        <br />
+                        <h4>Github-backend:</h4>
+                        <a class="projLink nav" href="https://github.com/sms165/snakeporium-backend " target="_blank">
+                            https://github.com/sms165/snakeporium-backend </a>
+                        <br />
+                        <br />
+                        <h4>Hostinger (live version):</h4>
+                        <a class="projLink nav" href="https://snakeporium.yblackbox.com"
+                            target="_blank">https://snakeporium.yblackbox.com</a>
+                        <!-- <h6>Username: tester</h6>
+                        <h6>Password: password</h6> -->
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="projPlanning" id="planning">
+
+                <hr class="line " />
+                <h2>Planning</h2>
+                <hr class="lineTwo" />
+                <br />
+
+
+                <div class="userStories">
+                    <h3>User Stories</h3>
+                    <ul>
+                        <li> As a user, I want to be able to view all the snakes available to buy and put them in my shopping cart.</li>
+                        <li> As a user, I want to be able to view my shopping cart, delete, add and update my shopping cart.
+                            </li>
+                    </ul>
+                </div>
+
+                
+
+            </div>
+
+            <br />
+            <br />
+
+            <div class="projStyle" id="style">
+
+                <hr class="line" />
+                <h2>Style Guide</h2>
+                <hr class="lineTwo" />
+                <br />
+
+                <div class="color overDesc">
+                    <h3>Color Palette</h3>
+                    <p>
+                        I oriented the style of the website on a snake skin background and neutral simple colors.
+                    </p>
+                    <br />
+                    <br />
+
+                    <div class="styleContainerFlex">
+
+                        <div class="flexChild">
+                            <div class="swatchBox bgColor"></div>
+                            <div class="swatchDesc">
+                                <br />
+                                <h4>Background Image:</h4>
+                                <p>AI Generated from Gemini AI</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="flexChild">
+                            <div class="swatchBox compColor"></div>
+                            <div class="swatchDesc">
+                                <br />
+                                <h4>Component Color:</h4>
+                                <p>#122535</p>
+                            </div>
+                        </div>
+
+                        <div class="flexChild">
+                            <div class="swatchBox linkColor"></div>
+                            <div class="swatchDesc">
+                                <br />
+                                <h4>Link Hover Color:</h4>
+                                <p>#F90606</p>
+                            </div>
+                        </div>
+
+                        <div class="flexChild">
+                            <div class="swatchBox btnColor"></div>
+                            <div class="swatchDesc">
+                                <br />
+                                <h4>Button Color:</h4>
+                                <p>#59A9F0</p>
+                            </div>
+                        </div> -->
+
+                    </div>
+
+                </div>
+
+                
+
+                </div>
+
+
+
+                <div class="images">
+                    <br />
+                    <h3>Images</h3>
+                    <br />
+
+                    <div class="styleContainerFlex">
+
+
+                        <div class="flexChild">
+                            <div class="swatchBox ">
+                                <div class="movieImage">
+                                    <img class="imageMovie" src="assets/snake-mouth.webp" alt="" />
+                                </div>
+                            </div>
+                            <div class="swatchDesc">
+                                <br />
+                                <h4>AI-Generated:</h4>
+                                <!-- <a href="https://pixabay.com/photos/columbus-ohio-ohio-theatre-theater-1936633/"
+                                    target="_blank"> -->
+                                    <p>Free Image from Gemini AI</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flexChild">
+                            <div class="swatchBox ">
+                                <div class="movieImage">
+                                    <img class="imageMovie" src="assets/snakeTitleMirror.png" />
+                                </div>
+                            </div>
+                            <div class="swatchDesc">
+                                <br />
+                                <h4>AI Generated:</h4>
+                                <!-- <a href="https://www.themoviedb.org/" target="_blank"> -->
+                                    <p>Free Image from Gemini AI</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+           
+        </div>
+        <br />
+        <br />
+        <div class="projDevel" id="development">
+            <hr class="line" />
+
+            <h2>Development</h2>
+            <hr class="lineTwo" />
+            <br />
+
+            <div class="techUsed overDesc">
+                <h3>Technologies Used</h3>
+                <ul>
+                    <li>Angular</li>
+                    <li>Typescript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Material Design </li>
+                    <li>Java SpringBoot</li>
+                </ul>
+            </div>
+            <br />
+            <br />
+            <div class="decisions">
+
+                <hr class="line" />
+                <h2 id="decisions">Challenges:</h2>
+                <hr class="lineTwo" />
+                <br />
+                <ul>
+                    <li>
+                        I faced many challenges along the way for example incoporating AI into to side to dynamically load more information about each snake on the detail page.<br />
+
+                    </li>
+                    <ul>
+                        <li>
+                            I was finally able to solve this problem myself using online resources and the documentation provided by Gemini for its APIs.<br />
+
+                        </li>
+                    </ul>
+                   
+                    </ul>
+                
+            </div>
+        </div>
+    </main>
+ <!-- Link to the external JavaScript file -->
+ <script src="../index.js"></script>
+</body>
+
+</html>
